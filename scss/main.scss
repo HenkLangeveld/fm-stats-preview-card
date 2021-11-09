@@ -1,0 +1,121 @@
+$very-dark-blue: hsl(233, 47%, 7%);
+$desaturate-blue: hsl(244, 38%, 16%);
+$violet: hsl(277, 64%, 61%);
+$white: hsl(0, 0%, 100%);
+$paragraph-white: hsla(0, 0%, 100%, 0.75);
+$heading-white: hsla(0, 0%, 100%, 0.6);
+
+// Basic styling
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+  // font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+body {
+  background-color: $very-dark-blue;
+  color: $paragraph-white;
+  padding: 70px 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+h1,
+strong {
+  color: $white;
+}
+
+p {
+  line-height: 2;
+}
+
+// utility classes
+.accent {
+  color: $violet;
+}
+
+.centered {
+  text-align: center;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+// card styling
+.card {
+  background-color: $desaturate-blue;
+  width: 85%;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    background-color: $violet;
+
+    img {
+      mix-blend-mode: multiply;
+    }
+  }
+
+  &__information {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  &__stats {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__statistic {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .centered {
+    text-align: left;
+  }
+
+  body {
+    padding: 140px 0;
+
+    .card {
+      flex-direction: row-reverse;
+
+      &__image {
+        flex: 0 0 50%;
+      }
+
+      &__information {
+        flex: 0 0 50%;
+        padding: 3rem 5rem 2rem 3rem;
+      }
+
+      &__stats {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+  }
+}
