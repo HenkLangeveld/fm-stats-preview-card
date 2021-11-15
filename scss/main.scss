@@ -43,7 +43,7 @@ strong {
 }
 
 h1 {
-  font-size: 1.9rem;
+  font-size: clamp(1.9rem, 2.5vw, 2.4rem);
   line-height: 1.1;
 }
 
@@ -54,6 +54,11 @@ strong {
 p {
   line-height: 1.7;
   margin-bottom: 23px;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin-inline: auto;
 }
 
 // utility classes
@@ -112,18 +117,18 @@ p {
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1000px) {
   .centered {
     text-align: left;
   }
 
   h1 {
-    font-size: 2.4rem;
+    // font-size: 2.4rem;
     line-height: 1.2;
   }
 
   p {
-    margin-bottom: 48px;
+    margin-bottom: auto;
   }
 
   body {
@@ -140,18 +145,31 @@ p {
 
       &__information {
         flex: 0 0 52%;
-        padding: 70px 8rem 2rem 5rem;
-        gap: 25px;
+      }
+
+      &__title {
+        max-width: 18ch;
+      }
+
+      &__text {
+        max-width: 40ch;
       }
 
       &__stats {
         flex-direction: row;
-        gap: 63px;
+        gap: clamp(30px, 4.4vw, 63px);
       }
+    }
+  }
+}
 
-      // &__statistic {
-      //   margin-right: 4rem;
-      // }
+@media screen and (min-width: 1250px) {
+  .card {
+    &__information {
+      padding-top: 70px;
+      padding-left: 75px;
+      padding-bottom: 60px;
+      gap: 25px;
     }
   }
 }
