@@ -37,8 +37,8 @@ Mobile:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/HenkLangeveld/fm-stats-preview-card)
-- Live Site URL: [Add live site URL here](https://frontend-mentor-stats-preview-card-by-henk.netlify.app/)
+- Solution URL: [github](https://github.com/HenkLangeveld/fm-stats-preview-card)
+- Live Site URL: [Live](https://frontend-mentor-stats-preview-card-by-henk.netlify.app/)
 
 ## My process
 
