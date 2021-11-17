@@ -4,7 +4,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ## Table of contents
 
-- [Overview](#overview)
+- [Overview](#overview)stats
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
@@ -27,7 +27,8 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/stats-preview-solution-800w.jpg)
+![Desktop](./images/stats-preview-solution-800w.jpg)
+![Mobile](./images/stats-preview-solution-mobile.jpg)
 
 ### Links
 
