@@ -27,7 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
+Desktop:
+
 ![Desktop](./images/stats-preview-solution-800w.jpg)
+
+Mobile:
+
 ![Mobile](./images/stats-preview-solution-mobile.jpg)
 
 ### Links
